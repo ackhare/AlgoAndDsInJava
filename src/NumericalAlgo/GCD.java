@@ -4,9 +4,17 @@ package NumericalAlgo;
  * Created by chetan on 29/8/16.
  */
 public class GCD {
+//Euclid algo for calculationg GCD
+
+    public static void main(String[] args) {
 
 
-    private static long findGCD(long a, long b)
+        int a=72;
+        int b=10;
+        System.out.println(findGCD(a,b));
+    }
+
+     static long findGCD(long a, long b)
     {
         while (b != 0)
         {
