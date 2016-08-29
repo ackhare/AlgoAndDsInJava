@@ -2,10 +2,6 @@ package Arrays.RotateArrays;
 
 import Utility.ArrayUtil;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Created by chetan on 29/8/16.
  */
@@ -27,11 +23,11 @@ class IntermidiateArray {
 
 
         int a[] = {1, 2, 3, 4, 5, 6, 7};//declaration, instantiation and initialization
-        rotate(a,3);
+        rotate(a, 3);
         ArrayUtil.printArray(a);
     }
 
-    static void rotate(int[] nums, int k) {
+    private static void rotate(int[] nums, int k) {
         if (k > nums.length)
             k = k % nums.length;
 
