@@ -24,7 +24,7 @@ public class SingleLinkListOPs {
         singleLinkListOPs.addItemAtBottom(900);
         singleLinkListOPs.addItemAtBottom(1000);
 
-showValues();
+///showValues();
 /*
 500
 400
@@ -37,6 +37,13 @@ showValues();
 900
 1000
  */
+
+removeFormTop();
+showValues();
+removeFromBottom();
+showValues();
+
+
 
 
     }
@@ -70,6 +77,25 @@ showValues();
 
     }
 
+
+    // Remove the top item.
+    static void removeFormTop()
+    {
+        top = top.Next;
+
+    }
+
+    // Remove the bottom item.
+    static  void removeFromBottom()
+    {
+        // Find the bottom of the list.
+        Cell before = top;
+        while (before.Next.Next != null) before = before.Next;
+
+        // Remove the item after before.
+        before.Next = null;
+
+    }
 
     static void  showValues()
     {
