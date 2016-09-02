@@ -10,6 +10,7 @@ public class SingleLinkListOPs {
 
     // The top of the list.
     private static Cell top = null;
+    private static Cell current = null;
     public static void main(String[] args) {
 
         SingleLinkListOPs singleLinkListOPs= new SingleLinkListOPs();
@@ -24,7 +25,7 @@ public class SingleLinkListOPs {
         singleLinkListOPs.addItemAtBottom(900);
         singleLinkListOPs.addItemAtBottom(1000);
 
-///showValues();
+showValues();
 /*
 500
 400
@@ -38,10 +39,10 @@ public class SingleLinkListOPs {
 1000
  */
 
-removeFormTop();
-showValues();
-removeFromBottom();
-showValues();
+//removeFormTop();
+//showValues();
+//removeFromBottom();
+//showValues();
 
 
 
@@ -51,10 +52,22 @@ showValues();
     void addItemAtTop(int value)
     {
 
+
             Cell newCell = new Cell();
             newCell.Value = value;
-            newCell.Next = top;
-            top = newCell;
+           if(current!=null)
+           {
+               current.Next = newCell;
+           }
+
+           else
+           {
+               top=newCell;
+           }
+            current=newCell;
+
+
+        System.out.println("guigkg"+current.Value);
 
 
         }
@@ -63,16 +76,17 @@ showValues();
     void addItemAtBottom(int value)
     {
   // Find the bottom of the list.
-            Cell current = top;
-            while (current.Next != null) current = current.Next;
+//            Cell current = top;
+            //while (current.Next != null) current = current.Next;
 
             // Add the item.
             Cell newCell = new Cell();
             newCell.Value=value;
             newCell.Next = null;
+            current.Next=newCell;
+            current = newCell;
 
-            current.Next = newCell;
-           // showValues();
+        // showValues();
 
 
     }
@@ -99,14 +113,23 @@ showValues();
 
     static void  showValues()
     {
-        // Version 1.
-        Cell current = top;
-        while (current != null)
-        {
-            System.out.println(current.Value);
-            current = current.Next;
-        }
+//        // Version 1.
+      //top1= top;
+        Cell top1=top;
 
+        // do
+//         while (top != null);
+        do
+        {
+            System.out.println(top.Value);
+          //if(top!=null)
+            top=top.Next;
+           // current = current.Next;
+        }
+        while (top != null);
+
+        top=top1;
+        //System.out.println("cdc"+top1.Value);
 
     }
 
