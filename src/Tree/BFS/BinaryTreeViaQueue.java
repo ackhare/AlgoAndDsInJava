@@ -2,8 +2,23 @@ package Tree.BFS;
 
 /**
  * Created by chetan on 13/8/17.
+ * http://www.geeksforgeeks.org/level-order-tree-traversal/
  */
+/*
+<-----------------Algo starts--------------------------->
+Algorithm:
+For each node, first the node is visited and then it’s child nodes are put in a FIFO queue.
+printLevelorder(tree)
+1) Create an empty queue q
+2) temp_node = root /*start from root*/
+/*
+3) Loop while temp_node is not NULL
+        a) print temp_node->data.
+        b) Enqueue temp_node’s children (first left then right children) to q
+        c) Dequeue a node from q and assign it’s value to temp_node
 
+<-----------------Algo ends--------------------------->
+*/
 // Iterative Queue based Java program to do level order traversal
 // of Binary Tree
 
@@ -33,7 +48,7 @@ class BinaryTreeViaQueue {
     void printLevelOrder()
     {
         Queue<Node> queue = new LinkedList<Node>();
-        queue.add(root);
+        queue.add(root);//this is a temporary node being added and itewration will continue till this becomes null
         while (!queue.isEmpty())
         {
 
@@ -44,6 +59,11 @@ class BinaryTreeViaQueue {
             System.out.print(tempNode.data + " ");
 
             /*Enqueue left child */
+            //Basically on first attempt queue will be empty with poll then enque with 2 & 3 which are left
+            // and right with 2 as its head which will be printed and popped in second recursion
+            //In third recursion 4 and 5 will be added and then subsequently popped till no leave is
+            // left to enque and queue is subsequently empty
+
             if (tempNode.left != null) {
                 queue.add(tempNode.left);
             }
