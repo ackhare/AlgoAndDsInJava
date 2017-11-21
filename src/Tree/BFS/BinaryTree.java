@@ -6,23 +6,7 @@ package Tree.BFS;
 // Recursive Java program for level order traversal of Binary Tree
 //http://www.geeksforgeeks.org/level-order-tree-traversal/
 /*
-<-----------------Algo starts--------------------------->
-/*Function to print level order traversal of tree*/
-/*
-printLevelorder(tree)
-for d = 1 to height(tree)
-   printGivenLevel(tree, d);
 
-/*Function to print all nodes at a given level*/
-/*printGivenLevel(tree, level)
-if tree is NULL then return;
-if level is 1, then
-    print(tree->data);
-else if level greater than 1, then
-    printGivenLevel(tree->left, level-1);
-    printGivenLevel(tree->right, level-1);
-*//*
-<-----------------Algo ends--------------------------->
 */
 
 /* Class containing left and right child of current
@@ -32,6 +16,7 @@ class Node {
     int data;
     Node left, right;
 
+    //constructor intialiazing values when not given like left and right
     public Node(int item) {
         data = item;
         left = right = null;
@@ -47,10 +32,10 @@ class Node {
     }
 }
 
-class BinaryTree {
+public class BinaryTree {
     // Root of the Binary Tree
     Node root;
-
+ //constructor intialiazing values when not given
     public BinaryTree() {
         root = null;
     }
@@ -105,17 +90,20 @@ class BinaryTree {
         if (root == null)
             return;
         if (level == 1)
-            //At end all calls will go here for printing as there will be a time when height() will decrease to leve 1
+            //At end all calls will go here for printing as there will be a
+            // time when height() will decrease to level 1
             //System.out.println("for level " + level + " ");
             System.out.println("root value is "+root.data);
 
         else if (level > 1) {
-            System.out.println("Inside printGivenLevel");
-            System.out.println("Level of tree is "+level);
-            System.out.println("root data is "+root);
-            //As can be seen level is being constantly reduced and root is being replaced by its left or right branch
-            printGivenLevel(root.left, level - 1);//for tree left to root  // will end when root.left=null which will occur on root.data=3
-            printGivenLevel(root.right, level - 1);//for tree left to right // will end when root.right=null which will occur on root.data=3
+
+            //As can be seen level is being constantly reduced  and root is being
+            //replaced by its left or right branch and the main aim is to reduce the level
+            //and tree's height
+            //and abstract a smaller tree from a bigger tree
+            printGivenLevel(root.left, level - 1);//for tree left to root
+            printGivenLevel(root.right, level - 1);//for tree left to right
+            //Both recursive call will end as level drops to 1
             //All calls will end to if(level==1) as level will decrease in recursive function
         }
     }
