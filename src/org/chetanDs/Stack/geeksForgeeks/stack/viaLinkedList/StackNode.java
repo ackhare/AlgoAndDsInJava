@@ -15,30 +15,24 @@ public class StackNode {
 
 class Stack {
 
-    StackNode root;
+    StackNode root;//In tree and linked list this is always 1st node and called root
 
     //Constructor to initialize the root of linked list
     public Stack() {
         this.root = null;
     }
-
-
     boolean isEmpty() {
         return root == null;
     }
-
     void push(String data) {
         StackNode newNode = new StackNode(data);
         newNode.next = this.root;
         root = newNode;
         System.out.println("pushed to stack " + data);
     }
-
     public String pop() {
-
         if (isEmpty())
             throw new NoSuchElementException("Underflow Exception");
-
         StackNode temp = root;
         root = root.next;
         String popped = temp.data;
