@@ -9,8 +9,8 @@ public class DoublyListOps {
 
 
     // The top of the list.
-    private static Cell top = null;
-    private static Cell previous = null;
+    private static Cell top = null;//As in linked list or tree root is intaliazed to null
+    private static Cell previous = null;//As in linked list or tree root is intaliazed to null
     public static void main(String[] args) {
 
         DoublyListOps singleLinkListOPs= new DoublyListOps();

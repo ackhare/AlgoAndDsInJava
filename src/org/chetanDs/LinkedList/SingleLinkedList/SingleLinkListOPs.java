@@ -65,7 +65,7 @@ showValues();
             current=newCell;
 
 
-        System.out.println("guigkg"+current.Value);
+        System.out.println("current value" + current.Value);
 
 
         }
