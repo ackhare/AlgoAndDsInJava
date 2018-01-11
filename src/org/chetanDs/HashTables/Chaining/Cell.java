@@ -1,4 +1,4 @@
-package HashTables.Chaining;
+package org.chetanDs.HashTables.Chaining;
 
 /**
  * Created by chetan on 1/10/16.

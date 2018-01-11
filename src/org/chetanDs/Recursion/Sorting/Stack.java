@@ -1,4 +1,4 @@
-package Recursion.Sorting;
+package org.chetanDs.Recursion.Sorting;
 
 /**
  * Created by chetan on 30/9/16.

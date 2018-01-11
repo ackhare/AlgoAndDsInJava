@@ -1,4 +1,4 @@
-package Sorting;
+package org.chetanDs.Sorting;
 
 /**
  * Created by chetan on 30/9/16.

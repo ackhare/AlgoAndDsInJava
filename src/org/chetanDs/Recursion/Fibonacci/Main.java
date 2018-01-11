@@ -1,4 +1,4 @@
-package Recursion.Fibonacci;
+package org.chetanDs.Recursion.Fibonacci;
 
 /**
  * Created by chetan on 18/10/16.

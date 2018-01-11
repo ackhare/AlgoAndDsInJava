@@ -1,4 +1,4 @@
-package Strings;
+package org.chetanDs.Strings;
 
 import java.util.HashMap;
 

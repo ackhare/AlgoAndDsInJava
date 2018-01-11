@@ -1,4 +1,4 @@
-package Recursion.Permutation;
+package org.chetanDs.Recursion.Permutation;
 
 import java.util.ArrayList;
 import java.util.List;

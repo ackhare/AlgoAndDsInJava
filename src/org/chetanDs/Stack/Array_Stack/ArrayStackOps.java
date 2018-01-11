@@ -1,4 +1,4 @@
-package Stack.Array_Stack;
+package org.chetanDs.Stack.Array_Stack;
 
 /**
  * Created by chetan on 30/9/16.

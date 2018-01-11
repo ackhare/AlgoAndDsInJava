@@ -1,4 +1,4 @@
-package Search;
+package org.chetanDs.Search;
 
 /**
  * Created by chetan on 1/10/16.

@@ -1,4 +1,4 @@
-package Utility;
+package org.chetanDs.Utility;
 
 /**
  * Created by chetan on 29/8/16.

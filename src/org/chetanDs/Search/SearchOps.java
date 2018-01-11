@@ -1,4 +1,4 @@
-package Search;
+package org.chetanDs.Search;
 
 import java.util.Random;
 

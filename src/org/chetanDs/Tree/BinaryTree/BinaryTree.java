@@ -1,4 +1,4 @@
-package Tree.BinaryTree;
+package org.chetanDs.Tree.BinaryTree;
 
 /**
  * Created by chetan on 11/8/17.

@@ -1,7 +1,6 @@
-package HashTables.Chaining;
+package org.chetanDs.HashTables.Chaining;
 
 import java.util.Random;
-
 /**
  * Created by chetan on 1/10/16.
  */

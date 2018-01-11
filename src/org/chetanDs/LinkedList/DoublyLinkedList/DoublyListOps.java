@@ -1,4 +1,4 @@
-package LinkedList.DoublyLinkedList;
+package org.chetanDs.LinkedList.DoublyLinkedList;
 
 
 

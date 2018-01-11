@@ -1,4 +1,4 @@
-package Recursion.AddSmaller;
+package org.chetanDs.Recursion.AddSmaller;
 
 /**
  * Created by chetan on 18/10/16.

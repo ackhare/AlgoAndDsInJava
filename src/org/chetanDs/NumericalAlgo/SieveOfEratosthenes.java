@@ -1,4 +1,4 @@
-package NumericalAlgo;
+package org.chetanDs.NumericalAlgo;
 
 import java.util.ArrayList;
 import java.util.List;

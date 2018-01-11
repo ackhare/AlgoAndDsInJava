@@ -1,4 +1,4 @@
-package NumericalAlgo;
+package org.chetanDs.NumericalAlgo;
 
 /**
  * Created by chetan on 29/8/16.

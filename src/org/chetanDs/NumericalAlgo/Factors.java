@@ -1,6 +1,6 @@
-package NumericalAlgo;
+package org.chetanDs.NumericalAlgo;
 
-import Utility.CollectionUtil;
+import org.chetanDs.Utility.CollectionUtil;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -50,12 +50,7 @@ public class ArrayStackImpl {
 class Main {
     public static void main(String args[]) {
 
-        int c = 0;
-        int t = c++;
-        int r = ++c;
-        System.out.println(c);
-        System.out.println(t);
-        System.out.println(r);
+
         ArrayStackImpl s = new ArrayStackImpl();
         s.push(10);
         s.push(20);

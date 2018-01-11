@@ -1,4 +1,4 @@
-package Stack.LinkedListQueue;
+package org.chetanDs.Stack.LinkedListQueue;
 
 /**
  * Created by chetan on 30/9/16.

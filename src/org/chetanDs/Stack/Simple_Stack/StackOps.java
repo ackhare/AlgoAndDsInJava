@@ -1,4 +1,4 @@
-package Stack.Simple_Stack;
+package org.chetanDs.Stack.Simple_Stack;
 
 import java.util.ArrayList;
 import java.util.List;

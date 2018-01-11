@@ -1,6 +1,7 @@
-package Arrays.RotateArrays;
+package org.chetanDs.Arrays.RotateArrays;
 
-import Utility.ArrayUtil;
+
+import org.chetanDs.Utility.ArrayUtil;
 
 /**
  * Created by chetan on 29/8/16.

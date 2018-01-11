@@ -1,4 +1,4 @@
-package LinkedList.SingleLinkedList;
+package org.chetanDs.LinkedList.SingleLinkedList;
 
 /**
  * Created by chetan on 1/9/16.

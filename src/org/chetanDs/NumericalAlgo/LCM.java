@@ -1,7 +1,7 @@
-package NumericalAlgo;
+package org.chetanDs.NumericalAlgo;
 
 
-import static NumericalAlgo.GCD.findGCD;
+import static org.chetanDs.NumericalAlgo.GCD.findGCD;
 
 /**
  * Created by chetan on 29/8/16.

@@ -1,4 +1,4 @@
-package Stack.Simple_Stack;
+package org.chetanDs.Stack.Simple_Stack;
 
 /**
  * Created by chetan on 30/9/16.

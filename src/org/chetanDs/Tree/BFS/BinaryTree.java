@@ -1,4 +1,4 @@
-package Tree.BFS;
+package org.chetanDs.Tree.BFS;
 
 /**
  * Created by chetan on 13/8/17.
