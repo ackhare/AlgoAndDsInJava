@@ -1,0 +1,12 @@
+https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+Other than Hashing and Floyd’s Cycle-Finding Algorithm:
+
+Mark Visited Nodes:
+This solution requires modifications to basic linked list data structure.
+Have a visited flag with each node.  Traverse the linked list and keep marking visited
+ nodes.
+ If you see a visited node again then there is a loop.
+ This solution works in O(n) but requires additional information with each node.
+A variation of this solution that doesn’t require modification to basic data
+ structure can be implemented using hash.  Just store the addresses of visited nodes
+ in a hash and if you see an address that already exists in hash then there is a loop.

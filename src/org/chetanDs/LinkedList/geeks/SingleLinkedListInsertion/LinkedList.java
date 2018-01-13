@@ -30,7 +30,7 @@ public class LinkedList {
         Node temp = head, prev = null;
 
         // If head node itself holds the key to be deleted
-        if (temp != null && temp.data == key) {
+        if (temp != null && temp.data == key) {//we need to keep checking of null
             head = temp.next; // Changed head
             return;
         }
@@ -48,12 +48,16 @@ public class LinkedList {
         // Unlink the node from linked list
         prev.next = temp.next;
     }
+//so head is null at beginning and which ever new node will come
+// it will add as head so it is like a stack
 
+    //Every new node requires a data and another node to point which is next
     /* Inserts a new Node at front of the list. */
     public void push(int new_data) {
         Node new_node = new Node(new_data);
         new_node.next = head;
-        head = new_node;
+        head = new_node;////so that next time when above line(58) runs where the orignal
+        // points should be pointed by this one
     }
 
     /* Function deletes the entire linked list */
@@ -66,9 +70,9 @@ public class LinkedList {
         /* Start with the empty list. */
         LinkedList llist = new LinkedList();
 
-        llist.head = new Node(1);
-        Node second = new Node(2);
-        Node third = new Node(3);
+//        llist.head = new Node(1);
+//        Node second = new Node(2);
+//        Node third = new Node(3);
 
         /* Three nodes have been allocated  dynamically.
           We have refernces to these three blocks as first,
@@ -81,7 +85,7 @@ public class LinkedList {
          | 1  | null |     | 2  | null |     |  3 | null |
          +----+------+     +----+------+     +----+------+ */
 
-        llist.head.next = second; // Link first node with the second node
+        //llist.head.next = second; // Link first node with the second node
 
         /*  Now next of first Node refers to second.  So they
             both are linked.
@@ -93,7 +97,7 @@ public class LinkedList {
         | 1  |  o-------->| 2  | null |     |  3 | null |
         +----+------+     +----+------+     +----+------+ */
 
-        second.next = third; // Link second node with the third node
+        //second.next = third; // Link second node with the third node
 
         /*  Now next of second Node refers to third.  So all three
             nodes are linked.
@@ -108,8 +112,9 @@ public class LinkedList {
         llist.push(1);
         llist.push(3);
         llist.push(2);
-        llist.deleteNode(1); // Delete node at position 4
         llist.printList();
+        llist.deleteNode(1); // Delete node at position 4
+        //llist.printList();
         llist.deleteList();
 
         System.out.println("Linked list deleted");
