@@ -6,7 +6,7 @@ For implementing queue, we need to keep track of two indices, front and rear.
 We enqueue an item at the rear and dequeue an item from front.
 If we simply increment front and rear indices, then there may be problems,
 front may reach end of the array. The solution to this problem is to increase
-front and rear in circular manner (See this for details)
+front and rear in circular manner
  */
 // A class to represent a queue
 class Queue {
@@ -14,6 +14,7 @@ class Queue {
     int capacity;
     int array[];
 
+    //size will be the number of actual elements inside the array of n capacity
     public Queue(int capacity) {
         this.capacity = capacity;
         front = this.size = 0;
@@ -95,4 +96,14 @@ public class Test {
     }
 }
 
-// This code is contributed by Gaurav Miglani
+//Output:
+//10 enqueued to queue
+//20 enqueued to queue
+//30 enqueued to queue
+//40 enqueued to queue
+//10 dequeued from queue
+//Front item is 20
+//Rear item is 40
+//Time Complexity: Time complexity of all operations like enqueue(), dequeue(),
+// isFull(), isEmpty(), front() and rear() is O(1).
+// There is no loop in any of the operations.
