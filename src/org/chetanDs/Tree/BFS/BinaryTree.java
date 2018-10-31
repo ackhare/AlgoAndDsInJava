@@ -47,9 +47,11 @@ public class BinaryTree {
         int i;
         System.out.println("Height of tree " + h);//3
         System.out.println("<-----------------height ends---->");//3
-        for (i = 1; i <= h; i++)
+        for (i = 1; i <= h; i++) {
             printGivenLevel(root, i);
-    }
+            System.out.println("loop");
+        }
+        }
 
     /* Compute the "height" of a tree -- the number of
     nodes along the longest path from the root node
@@ -69,11 +71,12 @@ public class BinaryTree {
             //  lheight and rheight will be 0
             //when both are 0 it will return rheight + 1 which will be 1
             int lheight = height(root.left);//will again call function height recursively
+            System.out.println("mmmmmmmmmmmmmmmm");
             int rheight = height(root.right);//will be called first time when lheight is 0 then again recursion will take place and below will if will be called when rheight will also be 0
             //the above recursive call will be on till an integer value is not returned
-            System.out.println("inside lheight rheight");
-            System.out.println("lheight "+lheight);
-            System.out.println("rheight "+rheight);
+//            System.out.println("inside lheight rheight");
+           System.out.println("lheight "+lheight);
+           System.out.println("rheight "+rheight);
             // System.out.println("root "+root);
             /* use the larger one */
             if (lheight > rheight)
@@ -102,7 +105,10 @@ public class BinaryTree {
             //and tree's height
             //and abstract a smaller tree from a bigger tree
             printGivenLevel(root.left, level - 1);//for tree left to root
+
+            System.out.println("first recursion ends");
             printGivenLevel(root.right, level - 1);//for tree left to right
+            System.out.println("second recursion ends");
             //Both recursive call will end as level drops to 1
             //All calls will end to if(level==1) as level will decrease in recursive function
         }

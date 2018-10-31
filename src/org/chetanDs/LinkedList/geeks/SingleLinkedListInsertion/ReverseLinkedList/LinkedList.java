@@ -20,7 +20,7 @@ class LinkedList {
     /* Function to reverse the linked list */
     Node reverse(Node node) {
         Node prev = null;
-        Node current = node;
+        Node current = node;//here head is being passed
         Node next = null;
         //In any object before assigning its refrence store it in a temp or it will be lost
         while (current != null) {
@@ -33,6 +33,7 @@ class LinkedList {
 
             prev = current;
             current = next;
+            System.out.println("looper");
         }
         //what was hold by node will be hold be prev now
         node = prev;
