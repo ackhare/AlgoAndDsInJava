@@ -64,6 +64,7 @@ class MergeSort
             j++;
             k++;
         }
+        System.out.println("Happy Debugging");
     }
 
     // Main function that sorts arr[l..r] using
